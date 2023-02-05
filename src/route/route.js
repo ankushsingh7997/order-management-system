@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router()
-const createCustomer = require("../controllers/customer");
-const  createOrder  = require("../controllers/order");
+const {createCustomer} = require("../controllers/customer");
+const  {createOrder } = require("../controllers/order");
 
 
 
