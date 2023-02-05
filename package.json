@@ -1,0 +1,24 @@
+{
+  "name": "order-management-system",
+  "version": "1.0.0",
+  "description": "Spring boot application with the below requirements :\r ● Creation of Customers\r ● Customers can create orders. For simplicity, once an order is created, thats final.\r There is no order status like created, payment done, completed etc. It is\r assumed that customer has already made the payment while creating the order.\r ● Customers are categorized as regular, gold, platinum\r ● By default, a customer is regular.\r ○ Customer is promoted to gold when he has placed 10 orders\r ○ Customer is promoted to platinum when he has placed 20 orders\r ● Gold = 10% discount, platinum = 20% discount\r ● When a customer creates an order, if he is a gold customer, automatically 10%\r discount is applied on the order. 20% for platinum customers.\r ● Since it is assumed that customer has already made the full payment during\r creation of the order, this discount information has to be kept safe by the\r application. We need to keep track of how much discount is given to which\r customer and for which order, so that customers can claim money back later.\r ● It is not mandatory to implement any other entities which are not mentioned here,\r like products or payments etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankushsingh7997/order-management-system.git"
+  },
+  "author": "ankush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankushsingh7997/order-management-system/issues"
+  },
+  "homepage": "https://github.com/ankushsingh7997/order-management-system#readme",
+
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  }
+}
